@@ -6,8 +6,8 @@
 </head>
 <body>
     <h1 th:text="#{content.title}"></h1>
-    <h2>入力画面</h2>
-    <p>値を入力してください。</p>
+    <h2 th:text="#{content.title.input}"></h2>
+    <p th:text="#{content.message.enter}"></p>
     <p th:unless="${previous} eq null" th:text="'前回入力された値は「' + ${previous} + '」 でした。'">th:unless</p>
     <form method="post" action="/output">
         <input type="text" name="previous">
