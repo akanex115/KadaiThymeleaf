@@ -18,8 +18,8 @@ public class OutpurController {
     }
 
     @GetMapping("/output")
-    public String getLink(Model model) {
-        model.addAttribute("previous", "previous");
+    public String getMsg() {
+        // msg.htmlに画面遷移
         return "output";
     }
 

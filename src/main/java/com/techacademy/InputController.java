@@ -15,6 +15,11 @@ public class InputController {
         model.addAttribute("previous", previous);
         return "input";
     }
+    public String getMsg() {
+        // msg.htmlに画面遷移
+        return "input";
+    }
+
     @GetMapping("/input?previous={previous}")
     public String getIfunless(@PathVariable String previous, Model model) {
         // パスパラメータで受け取った値をModelに登録
